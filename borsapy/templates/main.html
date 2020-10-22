@@ -1,0 +1,33 @@
+{% extends "header.html" %}
+
+{% block content %}
+   <body>
+      <style>
+      td {padding:10px;}
+      table{align:center;}    
+      
+      </style> 
+
+      <table border=1>
+         <thead class="table table-bordered table-dark">
+            <td>TARIH</td>
+            <td>ISIM</td>
+            <td>FIYAT</td>
+            <td>ADET</td>
+            <td>ISLEM</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row[4]}}</td>
+               <td>{{row[0]}}</td>	
+               <td>{{row[1]}}</td>
+               <td>{{row[2]}}</td>
+               <td>{{row[3]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+   </body>
+{% endblock %}
+

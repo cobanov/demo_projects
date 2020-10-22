@@ -1,0 +1,21 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+<body>  
+   
+    <h2>Veri Ekle</h2>   
+    <form action = "/savedetails" method="post">  
+    <table style="text-align:right;">  
+        <tr><td>ISIM</td><td><input type="text" name="isim"></td></tr>  
+        <tr><td>FIYAT</td><td><input type="number" name="fiyat"></td></tr>  
+        <tr><td>ADET</td><td><input type="number" name="adet"></td></tr>  
+        <tr><td>ISLEM</td><td><input type="text" name="islem"></td></tr>  
+        <tr><td>TARIH</td><td><input type="date" name="tarih"></td></tr>  
+        <tr><td><input type="submit" value="Submit"></td></tr>  
+    </table>  
+    </form>  
+</body>  
+
+
+{% endblock %}
